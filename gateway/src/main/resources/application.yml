@@ -5,11 +5,5 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
-    gateway:
-      routes:
-        - id: restapi
-          uri: lb://RESTAPI
-          predicates:
-            - Path=/**
 server:
   port: 8080
